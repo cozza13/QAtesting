@@ -16,7 +16,7 @@
 // Create const values
 const createTestBlocksScript = "https://raw.githubusercontent.com/highfidelity/hifi/5042561e80367ee2ebefa7d56728246e2d037e9d/unpublishedScripts/DomainContent/Toybox/blockers/createTestBlocks.js";
 const harmonicOscillatorScript = "http://s3.amazonaws.com/hifi-public/scripts/harmonicOscillator.js";
-const reverbTestScript = "http://s3.amazonaws.com/hifi-public/scripts/utilities/tools/reverbTest.js";
+const reverbTestScript = "https://rawgit.com/highfidelity/hifi/59e72470f36d3e17fc4ff9c117c91e60fe57be6f/scripts/developer/utilities/tools/reverbTest.js";
 const playaPerformanceTestScript = "https://raw.githubusercontent.com/highfidelity/hifi/master/scripts/developer/tests/playaPerformanceTest.js";
 
 // Create global variables.
