@@ -197,7 +197,7 @@ function setupMenus() {
     menuParameters("QA Test > Smoke Test", "LOAD 'playaPerformanceTest.js'");
     menuParameters("QA Test > Smoke Test", "UNLOAD 'playaPerformanceTest.js'");
     menuParameters("QA Test > Smoke Test", "localhost 'playaPerformanceTest.js' + Type 'localhost' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
-    menuParameters("QA Test > Smoke Test", "dev-playa 'playaPerformanceTest.js' + Type 'dev-playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
+    menuParameters("QA Test > Smoke Test", "dev-chris2.highfidelity.io 'playaPerformanceTest.js' + Type 'dev-chris2.highfidelity.io' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
     menuParameters("QA Test > Smoke Test", "dev-demo 'playaPerformanceTest.js' + Type 'dev-demo' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
     menuParameters("QA Test > Smoke Test", "Smoke Test QA Pass - SUCCESS");
     menuParameters("QA Test > Smoke Test", "Generate Smoke Test [CUT + PASTE RESULT]");
@@ -732,10 +732,10 @@ function generateSmokeTestManualTestingReport() {
     } else {
       MyStats.localhostPlayaPerformanceTest = "**localhost 'playaPerformanceTest.js'** FAILURE";
     }
-    if (Menu.isOptionChecked("dev-playa 'playaPerformanceTest.js' + Type 'dev-playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
-      MyStats.playaPlayaPerformanceTest = "**dev-playa 'playaPerformanceTest.js'** SUCCESS";
+    if (Menu.isOptionChecked("dev-chris2.highfidelity.io 'playaPerformanceTest.js' + Type 'dev-chris2.highfidelity.io' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
+      MyStats.playaPlayaPerformanceTest = "**dev-chris2.highfidelity.io 'playaPerformanceTest.js'** SUCCESS";
     } else {
-      MyStats.playaPlayaPerformanceTest = "**dev-playa 'playaPerformanceTest.js'** FAILURE";
+      MyStats.playaPlayaPerformanceTest = "**dev-chris2.highfidelity.io 'playaPerformanceTest.js'** FAILURE";
     }
     if (Menu.isOptionChecked("dev-demo 'playaPerformanceTest.js' + Type 'dev-demo' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
       MyStats.cellsciencePlayaPerformanceTest = "**dev-demo 'playaPerformanceTest.js'** SUCCESS";
@@ -801,7 +801,7 @@ function generateDomainStatsReport() {
       MyStats.timingTranslucents = Render.getConfig("DrawTransparentDeferred").cpuRunTime;
       MyStats.timingLighting = Render.getConfig("RenderDeferred").cpuRunTime;
       MyStats.renderFrame = Render.getConfig("RenderDeferredTask").cpuRunTime;
-    } else if (Window.location.hostname == "dev-playa") {
+    } else if (Window.location.hostname == "dev-chris2.highfidelity.io") {
       MyStats.domainInfo_playa = Window.location.hostname;
       MyStats.renderRate_playa = Math.round(Stats.renderrate);
       MyStats.presentRate_playa = Math.round(Stats.presentrate);
